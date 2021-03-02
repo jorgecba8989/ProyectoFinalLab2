@@ -1,0 +1,74 @@
+/*Diseño del fondo del index*/
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  text-decoration: none;
+}
+
+.full-screen
+{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.full-screen video
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content a
+{
+  background: transparent;
+  text-align: center;
+  color: lime;
+  font-size: 350%;
+}
+
+
+
+/*Diseño del texto Bienvenido*/
+.txt 
+{
+    color: lime;
+    background:transparent;
+    font-size:40px;
+    font-weight: bold;
+    font-family: Arial;
+    text-transform: uppercase;
+ }
+
+.txt::before 
+{
+    content: 'Bienvenido';
+    position: absolute;
+    mix-blend-mode: difference;
+    filter: blur(2.5px);
+}
+
+a 
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:inline-flex;
+    filter: brightness(300%);
+    overflow: hidden;
+}
+
+a:hover 
+{
+	text-decoration: none;
+}
+
